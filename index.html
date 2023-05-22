@@ -1,0 +1,228 @@
+<!--Type "!" then tab on a blank document to generate the base structure you need-->
+<!DOCTYPE html>
+<html lang="en">
+<head><!--Head tag is for meta data tags which is info about the website-->
+    <meta charset="UTF-8"><!--Authors should use UTF-8-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Scales website to device size-->
+    <title>My first website</title>
+    <meta name="description" content="Free HTML tutorial for beginners"><!--Info about the website-->
+    <meta name="keywords" content="HTML, tutorial, beginners"><!--Google keywords-->
+    <meta name="author" content="bro code">
+    
+    <!-- "<meta http-equiv="refresh" content="30">" sets the page's auto refresh rate-->
+</head>
+<!-- Write comments with text to the left-->
+<body><!--Different input forms from the user/// "type" specifies the format of the site-->
+    <form action="action_page.php" method="POST"><!--Does stuff related to php idk what tho-->
+        <div><!--Creates a text box and labels input as first name-->
+            <label for="fname">first name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Spongebob" required>
+        </div>
+        <br>
+        <div><!--Creates a text box and labels input as last name-->
+            <label for="lname">last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Squarepants" required>
+        </div>
+        <br>
+        <div><!--Creates a text box and labels input password-->
+            <label for="pass">password:</label>
+            <input type="password" id="pass" name="pass" maxlength="12" required>
+        </div>
+        <br>
+        <div><!--Creates a text box and labels input as email-->
+            <label for="email">email:</label>
+            <input email="text" id="email" name="email" placeholder="SPants@gmail.com" required>
+        </div>
+        <br>
+        <div><!--Creates a text box and labels input as phone number-->
+            <label for="phone">phone #:</label>
+            <input type="tel" id="phone" name="lname">
+        </div>
+        <br>
+        <div><!--Creates a text box and allows user to user to pick a calender date-->
+            <label for="bdate">last name:</label>
+            <input type="date" id="lname" name="bdate" >
+        </div>
+        <br>
+        <div><!--Creates a drop down style menu for selecting numbers-->
+            <label for="quantity">quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+        </div>
+        <br>
+        <div><!--Creates a radio box that lets the user choose between the 3-->
+            <label for="title">title:</label>
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." name="title" value="Mr.">
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" id="Mrs." name="title" value="Mrs.">
+            <label for="PhD.">PhD.</label>
+            <input type="radio" id="PhD." name="title" value="PhD.">
+        </div>
+        <br>
+        <div><!--Creates a dropdown menu (make sure the options are indented)-->
+            <label for="payment">payment:</label>
+            <select id="payment" name="payment">
+                <option value="visa">visa</option>
+                <option value="mastercard">mastercard</option>
+                <option value="giftcard">giftcard</option>
+            </select>
+        </div>
+        <br>
+        <div><!--Creates a check box button-->
+            <label for="subscribe">subscribe:</label>
+            <input type="checkbox" id="subscribe" name="subscribe">
+        </div>
+        <div><!--Creates a reset button-->
+            <input type="reset">
+        </div>
+        <br>
+        <div><!--Creates a submit button-->
+            <input type="submit">
+        </div>
+
+    </form>
+    <!--Adds and formats button with a hyperlink-->
+    <a href="https://www.google.com">
+        <button style="background-color: blue; color:#28f005;border-radius: 5px;">click me</button>
+        </a>
+        <!--Adds button that runs a JavaScript function when clicked-->
+        <button onclick="doSomething()" style="background-color: blue; color:#28f005;border-radius: 5px;">click me</button>
+            
+        <p id="test">Hello</p><!--Sets this paragraph to an id of "test"-->
+        
+        <!--Below is a lil java script funciton that changes the above paragraph to "goodbye"-->
+        <script>
+        function doSomething(){
+                document.getElementById("test").innerHTML = "Goodbye";
+            }
+        </script>
+    <!--This is how you insert an image and format it with a hyperlink-->
+    <a href="https://www.whitehouse.gov/about-the-white-house/presidents/barack-obama/">
+    <img src="President_Barack_Obama.jpg" height="300" alt="This is a picture of Obama" title="Obama" >
+    </a>
+
+    <hr><!--hr = horozontal rule(line)-->
+    <!--This is how you insert audio with boolean variables-->
+    <audio controls autoplay muted loop>
+        <source src="Jason_Mraz_Live_High.mp3">
+        <source src="Jason_Mraz_Live_High.mp3">
+        This browser does not support HTML5 audio
+    </audio>
+
+    <hr>
+    <!--This is how you insert video with boolean variables-->
+    <video controls autoplay muted loop width="500">
+        <source src="Video.mp4">
+        <source src="Video.mp4">
+        This browser does not support HTML5 video
+    </video>
+
+    <hr>
+    <!--This is how you format different types of texts-->
+    <p>This is normal text</p>
+    <p>This is <b>bold</b> text</p>
+    <p>This is <i>italic</i> text</p>
+    <p>This is <big>big</big> text</p>
+    <p>This is <small>small</small> text</p>
+    <p>This is <sub>subscript</sub> text</p>
+    <p>This is <sup>superscript</sup> text</p>
+    <p>This is <ins>inserted</ins> text</p>
+    <p>This is <del>deleted</del> text</p>
+    <p>This is <mark>marked</mark> text</p>
+
+    <hr>
+    <!--Dotted list-->
+    <h4>Unordered List</h4>
+    <ul><!-- ul = unordered list-->
+        <li>pizza dough</li><!-- li = list item-->
+        <li>tomato sauce</li>
+        <li>cheese</li>
+        <li>toppings
+            <ul><!--Sub list-->
+                <li>pepperoni</li>
+                <li>mushrooms</li>
+                <li>peppers</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <!--Numbered list that can switch between letters, numbers, and roman numerals-->
+    <h4>Ordered List</h4>
+    <ol type="I"><!-- ol = ordered list /// type changes the character that leads the list-->
+        <li>eat breaky</li>
+        <li>take a shower</li>
+        <li>leave for work</li>
+    </ol>
+    <hr>
+    <!--List with definitions (Basically vocab cards)-->
+    <h4>Description List</h4>
+    <dl><!-- dl = description list-->
+        <dt>HMTL</dt>
+        <dd>This adds structure to a webpage</dd>
+        <dt>CSS</dt>
+        <dd>This adds style to a webpage</dd>
+        <dt>JavaScript</dt>
+        <dd>This adds functionality to a webpage</dd>
+    </dl>
+
+    <hr>
+    <!--This is how you create and format a table with colors-->
+    <h3>Store Hours</h3>
+    <table bgcolor="black" width="700">
+        <tr bgcolor="grey"><!-- tr = table row-->
+            <th width="100">Sunday</th><!-- th = table heading-->
+            <th width="100">Monday</th>
+            <th width="100">Tuesday</th>
+            <th width="100">Wednesday</th>
+            <th width="100">Thursday</th>
+            <th width="100">Friday</th>
+            <th width="100">Saturday</th>
+        </tr>
+        <tr bgcolor="lightgrey" align="center">
+            <td>Closed</td><!-- td = table data-->
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>Closed</td>
+        </tr>
+    </table>
+    <hr>
+</body>
+<body style="background-color: grey;">
+
+    <h1 style="color: red;">Hello!</h1>
+    <h1 style="color:rgb(5, 240, 232)">Hello!</h1>
+    <h1 style="color: #28f005">Hello!</h1>
+
+    <p style="background-color: #222222; color: #28f005">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, eos! Adipisci consequuntur eos explicabo quidem aliquid deleniti illo libero, enim recusandae voluptate eveniet rerum ad numquam, laboriosam illum ut alias.</p>
+    <hr>
+
+    <!--span = adds markup to text or portion of a document-->
+    <!--div = defines a division of a document-->
+    <!--Span highlights certain parts of sentences or paragraphs-->
+    <!--Div applies the same effect to any code inside it's tags-->
+
+    <h1>Hello!</h1>
+    <div style="background-color: green">
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure hic earum vel nostrum sint repellendus recusandae eum dolores at! Ex dolorum a perspiciatis odit nihil fugiat maxime dolores porro?
+    </p>
+    <p>
+        <span style="color: red">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> Cupiditate iure hic earum vel nostrum sint repellendus recusandae eum dolores at! Ex dolorum a perspiciatis odit nihil fugiat maxime dolores porro?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure hic earum vel nostrum sint repellendus recusandae eum dolores at! Ex dolorum a perspiciatis odit nihil fugiat maxime dolores porro?
+    </p>
+    </div>
+
+    <hr>
+    <!--iframe = embed content from another source into an HTML document
+        ex. used for ads, used in many hacking techniques-->
+    <!--Most major websites have banned them as ppl can add it to their own websites
+        to steal information. For an HTML file put in the relative file path-->
+    <iframe  style="border:0" src="add.html" width="750" height="100">
+</body>
+</html>
